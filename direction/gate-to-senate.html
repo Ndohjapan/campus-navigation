@@ -34,7 +34,7 @@
                     <div class="row ">
                         <div class="school-logo col-12">
                             <a href="/index.html">
-                                <img src="../assets/image/logo.svg" alt="LCU logo" class="img-fluid">
+                                <img src="https://campus-navigation.s3.eu-west-3.amazonaws.com/logo.svg" alt="LCU logo" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
             
                 <div class="row direction-container">
                     <div class="image-container col-lg-10 col-12 pl-center">
-                        <img src="../assets/location with tag/gate-to-senate.png" class="img-fluid " id="direction-image" alt="Main Gate-to-Senate">
+                        <img src="https://campus-navigation.s3.eu-west-3.amazonaws.com/location+with+tag/gate-to-senate.png" class="img-fluid " id="direction-image" alt="Main Gate-to-Senate">
                     </div>
                     <div class="buttons-container col-lg-2 col-12 row">
                         <button class="btn btn-primary show-img-btn" location="Main Gate"> <i class="fas fa-street-view "></i> <p>See Position</p></button>
@@ -122,7 +122,7 @@
             <script>
             $(document).ready(function (){
                 $("#player").vpplayer({
-                    src: "../assets/audio/gate-to-senate.mp3",
+                    src: "https://campus-navigation.s3.eu-west-3.amazonaws.com/audio/gate-to-senate.mp3",
                     trackName: "Main Gate To Senate",
                     preloadMessage:"LOADING...",
                     view:"basic"// or minimal
@@ -159,7 +159,7 @@
         
             // Initiate request.
             oXHR.onreadystatechange = reportStatus;
-            oXHR.open("GET", "../assets/image/gallery/images.json", true);  // get json file.
+            oXHR.open("GET", "https://campus-navigation.s3.eu-west-3.amazonaws.com/images.json", true);  // get json file.
             oXHR.send();
         
             function reportStatus() {
