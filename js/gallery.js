@@ -32,7 +32,7 @@ span.addEventListener("click", () => {
 
     // Initiate request.
     oXHR.onreadystatechange = reportStatus;
-    oXHR.open("GET", "https://campus-navigation.s3.eu-west-3.amazonaws.com/images.json", true);  // get json file.
+    oXHR.open("GET", "../images.json", true);  // get json file.
     oXHR.send();
 
     function reportStatus() {
