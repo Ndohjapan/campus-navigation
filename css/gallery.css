@@ -1,0 +1,237 @@
+@import url("https://fonts.google.apis.com/css2?family=Montserrat:weight@700&display=swap");
+
+
+:root{
+    --main-color-1: #0082C6;
+    --main-color-2: #3E9CE2;
+    --main-color-3: #61B7FF;
+    --main-color-4: #81D2FF;
+    --main-color-5: #9FEEFF;
+    --main-color-6: #BEFFFF;
+    --main-color-7: #DCFFFF;
+    --main-color-8: #FBFFFF;
+    --main-color-9: #FFFFFF;
+    --secondary-color-1: #F8871E;
+    --secondary-color-2: #FFA23C;
+    --secondary-color-3: #FFBD57;
+    --secondary-color-4: #FFD972;
+    --secondary-color-5: #FFF68D;
+    --secondary-color-6: #FFFFA9;
+    --secondary-color-7: #FFFFC6;
+    --tertiary-color-1: #EC268F;
+    --tertiary-color-2: #FF4CA9;
+    --tertiary-color-3: #FF6CC5;
+    --tertiary-color-4: #FF8BE1;
+    --tertiary-color-5: #FFA9FD;
+    --tertiary-color-6: #FFC7FF;
+    --tertiary-color-7: #FFE5FF;
+    --tertiary-color-8: #FFFFFF;
+}  
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: var(--main-color-7);
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+.pl-center{
+    place-content: center;
+}
+
+
+/* Header styling */
+.gallery-name-container{
+    display: flex;
+}
+
+.campus-navigation-menu{
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--main-color-2);
+    width: 100%;
+    margin: auto;
+    place-content: center;
+}
+
+.return-btn{
+    display: flex;
+    align-items: center;
+}
+
+.return-btn:hover{
+    color: white;
+}
+
+.search-bar-container{
+    align-items: center;
+}
+
+.search-bar-container > input{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.search-bar-container > input:focus{
+    border: none;
+    outline: none;
+}
+
+.search-bar-container > a > i{
+    font-size: 1.5rem;
+}
+
+/* Map Card Stylesheet */
+.map-card{
+    background: var(--tertiary-color-4);
+    padding: .5rem;
+    margin:10px;
+    display: grid;
+    grid-gap: 1.5rem;
+    flex-basis: calc(33% - 20px);
+    padding: 1rem;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+.map-image{
+    display: flex;
+    justify-content: center;
+}
+
+.map-image img{
+    width: 50%;
+    box-shadow:  3px 4px 8px rgba(0,0,0,1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.map-image img:hover{
+    opacity: 0.7;
+}
+
+.card-link h3{
+    text-align: center;
+}
+
+.refresh-search{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    padding: 1rem;
+}
+
+.refresh-search a{
+    display: none;
+    font-size: 2rem;
+    background-color: var(--main-color-2);
+    padding: 1rem 1.5rem;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.8);
+}
+
+/* Styling for Image in Full Screen */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 1000;
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+/* Responsiveness of card container */
+@media (max-width: 990px) {
+    .map-card{
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 670px){
+    .map-card{
+        flex-basis: calc(100% - 20px);
+    }
+}

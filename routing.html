@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Routes</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap-grid.min.css">
+    <!-- Font awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha512-g06pohSHYbSOHKq8tdDGXckE6C23Yt30xlTFDhrO0OcO/bNO2MWXb63oqU/Y23GDMNOon100eGHxZPBnT4QgMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap Select-->
+    <link rel="stylesheet" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- Routing Stylesheet -->
+    <link rel="stylesheet" href="./css/routing.css">
+</head>
+<body>
+    
+    <!--  Navigation Section -->
+    <nav class="campus-navigation-menu container">
+        <div class="row ">
+            <div class="school-logo col-12">
+                <a href="/index.html">
+                    <img src="https://campus-navigation.s3.eu-west-3.amazonaws.com/logo.svg" alt="LCU logo" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container select-section row pl-center">
+        <div class="col-12 col-lg-6">
+            <h1>Select Your Current and Destination Location</h1>
+        </div>
+
+        <div class="col-12 col-lg-6 input-form">
+            <form action="">
+                <div class="form-group">
+                    <label for="current-location">From: <i class="fa fa-street-view"></i> </label>
+                    <select name="Current Location" id="current-location" class="form-control">
+                        <option value="gate">Gate</option>
+                        <option value="adeline-hall">Adeline Hall</option>
+                        <option value="art-education-social-science">Art Education / Social Sciences</option>
+                        <option value="car-park">Car Park</option>
+                        <option value="enterprise">Enterprise</option>
+                        <option value="boys-hostel">Main Boys Hostel</option>
+                        <option value="girls-hostel">Main Girls Hostel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination-location">To: <i class="fas fa-map-marked-alt"></i></label>
+                    <select name="Destination Location" id="destination-location" class="form-control">
+                        <option value="senate">Senate</option>
+                        <option value="art-education-social-science">Art Education / Social Sciences</option>
+                        <option value="atm">ATM</option>
+                        <option value="basketball-court">Basketball Court</option>
+                        <option value="block-a">Block A</option>
+                        <option value="block-b">Block B</option>
+                        <option value="block-c">Block C</option>
+                        <option value="boys-hostel">Boys Hostel</option>
+                        <option value="car-park">Car Park</option>
+                        <option value="chapel-of-peace-and-joy">Chapel Of Peace And Joy</option>
+                        <option value="enterprise">Enterprise</option>
+                        <option value="girls-hostel">Main Girls Hostel</option>
+                        <option value="guest-house">Confrence Center / Guest House</option>
+                        <option value="hospital">Hospital</option>
+                        <option value="law-faculty">Law Faculty</option>
+                        <option value="law-theater">Law Theater</option>
+                        <option value="lead-radio">Lead Radio</option>
+                        <option value="library">Library</option>
+                        <option value="mart-and-pharm">Mart and Pharmacy</option>
+                        <option value="nursing-department">Nursing Department</option>
+                        <option value="public-health-department">Public Health Department</option>
+                        <option value="school-field">School Field</option>
+                        <option value="sports-complex">Sports Complex</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button class="form-control next-page-btn" id="direction-button">See Direction <i class="fas fa-directions"></i> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper.js/umd/popper.min.js"> </script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="vendor/waypoints/lib/jquery.waypoints.min.js"> </script>
+<script src="vendor/jquery.counterup/jquery.counterup.min.js"> </script>
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
+<script src="./js/routing.js"></script>
+
+</html>

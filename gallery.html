@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap-grid.min.css">
+    <!-- Font awesome stylesheet -->
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap Select-->
+    <link rel="stylesheet" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+
+    <!-- Home page stylesheet -->
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+<body id="gallery-page">
+    <!--  Navigation Section -->
+    <nav class="campus-navigation-menu row">
+        <div class="gallery-name-container col-lg-6 col-md-6 col-sm-12">
+            <a href="/index.html" class="return-btn col-lg-2 col-md-3 col-sm-2 ">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/reply-arrow.png" alt="return arrow button" class="img-fluid"/>
+            </a>
+            <h1 class="col-md-6 col-sm-10">Gallery</h1>
+        </div>
+        <div class="search-bar-container row col-md-6 col-sm-12 col-lg-6 ">
+            <input type="search" name="saerch-location" id="searchbar" placeholder="search location" class="col-lg-7 col-md-9 col-sm-10 col-10">
+            <a href="#" class="col-lg-4 col-md-2 col-sm-2 col-1 search-icon">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Card Area-->
+    <div class="container main-body">
+
+        <!-- Main Container of cards -->
+        <div class="map-cards-container row ">
+
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+        
+            <!-- Image Carousel -->
+            
+            <div id="demo" class="carousel slide modal-content" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              
+              </div>
+
+        </div>
+    </div>
+
+    <div class="refresh-search">
+        <a href="#">
+            <i class="fa fa-refresh"></i>
+        </a>
+    </div>
+
+
+</body>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"> </script>
+    <script src="vendor/jquery.counterup/jquery.counterup.min.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    <script src="./js/gallery.js"></script>
+
+</html>

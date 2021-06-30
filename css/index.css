@@ -1,0 +1,214 @@
+@import url("https://fonts.google.apis.com/css2?family=Montserrat:weight@700&display=swap");
+
+:root{
+    --main-color-1: #0082C6;
+    --main-color-2: #3E9CE2;
+    --main-color-3: #61B7FF;
+    --main-color-4: #81D2FF;
+    --main-color-5: #9FEEFF;
+    --main-color-6: #BEFFFF;
+    --main-color-7: #DCFFFF;
+    --main-color-8: #FBFFFF;
+    --main-color-9: #FFFFFF;
+    --secondary-color-1: #F8871E;
+    --secondary-color-2: #FFA23C;
+    --secondary-color-3: #FFBD57;
+    --secondary-color-4: #FFD972;
+    --secondary-color-5: #FFF68D;
+    --secondary-color-6: #FFFFA9;
+    --secondary-color-7: #FFFFC6;
+    --secondary-color-8: #FFFFE2;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("https://campus-navigation.s3.eu-west-3.amazonaws.com/campus-background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0082c6c2;
+    z-index: -1;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+.pl-center{
+    place-content: center;
+}
+
+.show-mobile{
+    display: none;
+}
+
+
+/* Nav Bar Section */
+.campus-navigation-menu{
+    flex: 0 1 auto;
+}
+.campus-navigation-menu img{
+    width: 40%;
+}
+
+.school-logo{
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+
+
+/* Body styling */
+.main-body{
+    flex: 1 1 auto;
+    display: grid;
+    place-content: center;
+}
+
+.main-body h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-body p{
+    max-width: 80%;
+    font-size: 1.1rem;
+}
+
+.main-body .row{
+    margin: 0;
+}
+
+.main-body a{
+    background: var(--secondary-color-1);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s; 
+}
+
+
+.main-body a::before{
+    content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ec268f;
+      color: #000;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+}
+
+
+.main-body a:hover::before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Mobile Menu */
+.mobile-menu{
+    flex: 0 1 40px;
+    display: grid;
+    place-content: center;
+    padding: 2rem ;
+    border-top: 4px solid var(--secondary-color-1);
+}
+
+.mobile-menu a > *{
+    font-size: 2.5rem;
+}
+
+/* Responsive home page */
+@media(max-width: 900px){
+    .show-desktop{
+        display: none;
+    }
+
+    .show-mobile{
+        display: grid;
+    }
+
+    .school-logo{
+        padding: 2rem;
+    }
+
+    .campus-navigation-menu img{
+        width: 70%;
+    }
+}
+
+@media(max-width: 670px){
+    .main-body h1{
+        font-size: 2rem;
+    }
+
+    .main-body p{
+        font-size: 1rem;
+    }
+
+    .main-body a{
+        font-size: 1rem;
+    }
+
+    .mobile-menu a > *{
+        font-size: 2rem;
+    }
+
+    .mobile-menu {
+        padding: 1rem
+    }
+
+    .school-logo{
+        padding: 1rem
+    }
+}
+
